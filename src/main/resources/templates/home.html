@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+	<div align="center" class="container">
+		<h1>SRI SIDHGANGA PG</h1>
+		<div class="home-buttons">
+			<a href="/add-details" class="btn-primary">Add Record</a>
+			<a href="/view-details" class="btn-primary">Fetch Records</a>
+		</div>
+	</div>
+	
+	<script th:if="${message}">
+		alert("[[${message}]]")
+	</script>
+</body>
+</html>

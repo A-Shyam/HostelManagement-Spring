@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+	<div align="center">
+        <h1>Edit PG Record</h1>
+        <form action="/update-details" method="post">
+        	<input type="hidden" name="id" th:value="${pg.id}">
+            Name: <input type="text" name="pgName" th:value="${pg.pgName}" disabled><br><br>
+            Tenet Name: <input type="text" name="tenetName" th:value="${pg.tenetName}"><br><br>
+            Phone number: ,<input type="text" name="number" th:value="${pg.number}"><br><br>
+            Fee: <input type="text" name="fee" th:value="${pg.fee}"><br><br>
+            Room number: <input type="text" name="roomno" th:value="${pg.roomno}"><br><br>
+            Joined Date: <input type="text" name="joindate" th:value="${pg.joindate}"><br><br>
+            <button>Edit</button>
+        </form>
+    </div>
+</body>
+</html>
