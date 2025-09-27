@@ -21,7 +21,7 @@ public class PgController {
 	
 	@GetMapping("/")
 	public String loadMain() {
-		return "home.html";
+		return "index.html";
 	}
 	
 	@GetMapping("/add-details")
